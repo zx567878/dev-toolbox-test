@@ -1,1 +1,10 @@
-IyDnu5/kuIDmjaLooYznrKbvvIzpgb/lhY0gV2luZG93cyAvIExpbnV4IOaehOW7uuW3ruW8ggoqIHRleHQ9YXV0byBlb2w9bGYKCiMg5LqM6L+b5Yi25paH5Lu25LiN5YGa5o2i6KGM6L2s5o2iCioucG5nIGJpbmFyeQoqLmpwZyBiaW5hcnkKKi5qcGVnIGJpbmFyeQoqLmljbyBiaW5hcnkKKi53b2ZmIGJpbmFyeQoqLndvZmYyIGJpbmFyeQo=
+# 统一换行符，避免 Windows / Linux 构建差异
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

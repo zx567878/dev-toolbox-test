@@ -1,1 +1,25 @@
-LS0tCmltcG9ydCB7IHR5cGUgQ29sbGVjdGlvbkVudHJ5LCBnZXRDb2xsZWN0aW9uLCByZW5kZXIgfSBmcm9tICdhc3Rybzpjb250ZW50JzsKaW1wb3J0IEJsb2dQb3N0IGZyb20gJy4uLy4uL2xheW91dHMvQmxvZ1Bvc3QuYXN0cm8nOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN0YXRpY1BhdGhzKCkgewoJY29uc3QgcG9zdHMgPSBhd2FpdCBnZXRDb2xsZWN0aW9uKCdwb3N0cycpOwoJcmV0dXJuIHBvc3RzCgkJLmZpbHRlcigocG9zdCkgPT4gIXBvc3QuZGF0YS5kcmFmdCkKCQkubWFwKChwb3N0KSA9PiAoeyBwYXJhbXM6IHsgc2x1ZzogcG9zdC5pZCB9LCBwcm9wczogeyBwb3N0IH0gfSkpOwp9Cgp0eXBlIFByb3BzID0geyBwb3N0OiBDb2xsZWN0aW9uRW50cnk8J3Bvc3RzJz4gfTsKCmNvbnN0IHsgcG9zdCB9ID0gQXN0cm8ucHJvcHM7CmNvbnN0IHsgQ29udGVudCB9ID0gYXdhaXQgcmVuZGVyKHBvc3QpOwotLS0KCjxCbG9nUG9zdAoJdGl0bGU9e3Bvc3QuZGF0YS50aXRsZX0KCWRlc2NyaXB0aW9uPXtwb3N0LmRhdGEuZGVzY3JpcHRpb259CglkYXRlPXtwb3N0LmRhdGEuZGF0ZX0KCXVwZGF0ZWQ9e3Bvc3QuZGF0YS51cGRhdGVkfQo+Cgk8Q29udGVudCAvPgo8L0Jsb2dQb3N0Pgo=
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts');
+	return posts
+		.filter((post) => !post.data.draft)
+		.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+type Props = { post: CollectionEntry<'posts'> };
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost
+	title={post.data.title}
+	description={post.data.description}
+	date={post.data.date}
+	updated={post.data.updated}
+>
+	<Content />
+</BlogPost>

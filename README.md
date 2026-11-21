@@ -1,1 +1,68 @@
-IyDmgZLmuKnnrrEgwrcgNDMxMDI2MjAueHl6CgrkuKrkurrljZrlrqLjgIJBc3RybyDpnZnmgIHnq5nvvIxNYXJrZG93biDlhpnkvZzvvIxHaXRIdWIgQWN0aW9ucyDoh6rliqjlj5HluIPjgIIKCiMjIOaKgOacr+agiAoKfCDpobkgfCDlgLwgfAp8LS0tfC0tLXwKfCDmoYbmnrYgfCBBc3RybyA2LjQuOO+8iCoq6ZSB5a6a77yM5Yu/5Y2HIDcqKu+8jOingeS4i++8iSB8Cnwg5YaF5a65IHwgTWFya2Rvd27vvIhgc3JjL2NvbnRlbnQvcG9zdHMvYO+8iSB8Cnwg6ZmE5YqgIHwgYEBhc3Ryb2pzL3Jzc2DjgIFgQGFzdHJvanMvc2l0ZW1hcGAgfAp8IOaJmOeuoSB8IEdpdEh1YiBQYWdlc++8iOS7k+W6kyBgeng1Njc4NzgvZGV2LXRvb2xib3hg77yJIHwKfCDlj5HluIMgfCBwdXNoIGBtYWluYCDihpIgQWN0aW9ucyDmnoTlu7og4oaSIGBnaC1wYWdlc2Ag5YiG5pSvIHwKCiMjIOacrOWcsOW8gOWPkQoKYGBgYmFzaApucG0gY2kgICAgICAgICAgIyDlronoo4Xkvp3otZYKbnBtIHJ1biBkZXYgICAgICMg5pys5Zyw6aKE6KeIIGh0dHA6Ly9sb2NhbGhvc3Q6NDMyMQpucG0gcnVuIGJ1aWxkICAgIyDmnoTlu7rliLAgZGlzdC8KbnBtIHJ1biBwcmV2aWV3ICMg6aKE6KeI5p6E5bu65Lqn54mpCmBgYAoKIyMg5YaZ5paH56ugCgrlnKggYHNyYy9jb250ZW50L3Bvc3RzL2Ag5LiL5paw5bu6IGAubWRgIOaWh+S7tu+8jOaWh+S7tuWQjeWNsyBVUkzvvIhgZm9vLm1kYCDihpIgYC9wb3N0cy9mb28uaHRtbGDvvInjgIIKCmBgYHlhbWwKLS0tCnRpdGxlOiDmoIfpopgKZGF0ZTogMjAyNi0xMS0yMSAxMzozMDowMApkZXNjcmlwdGlvbjog5LiA5Y+l6K+d5pGY6KaB77yM5pi+56S65Zyo5YiX6KGo5Y2h54mHCnRhZ3M6CiAgLSDmnYLorrAKZHJhZnQ6IGZhbHNlCi0tLQpgYGAKCmBkcmFmdDogdHJ1ZWAg55qE5paH56ug5LiN5p6E5bu644CB5LiN5pi+56S644CCCgojIyDlj5HluIMKCmBgYGJhc2gKZ2l0IGFkZCAtQQpnaXQgY29tbWl0IC1tICJwb3N0OiDmlrDmlofnq6DmoIfpopgiCmdpdCBwdXNoCmBgYAoK5o6o6YCB5ZCOIEdpdEh1YiBBY3Rpb25zIOiHquWKqOaehOW7uuW5tuWPkeW4g++8jOaXoOmcgOacrOWcsOaehOW7uuOAgui/m+W6puingeS7k+W6kyBBY3Rpb25zIOmhteOAggoKIyMg55uu5b2VCgpgYGAKc3JjLwogIGNvbXBvbmVudHMvICAgICBCYXNlSGVhZCBIZWFkZXIgRm9vdGVyIEhlYWRlckxpbmsgRm9ybWF0dGVkRGF0ZQogIGNvbnRlbnQvcG9zdHMvICDmlofnq6AgTWFya2Rvd24KICBsYXlvdXRzLyAgICAgICAgQmxvZ1Bvc3Qg5biD5bGACiAgcGFnZXMvICAgICAgICAgIGluZGV4IHBvc3RzIGFib3V0IDQwNCByc3MueG1sIHBvc3RzL1tzbHVnXQogIHN0eWxlcy8gICAgICAgICBnbG9iYWwuY3NzCnB1YmxpYy8gICAgICAgICAgIGZhdmljb24gLyBpbWcgLyByb2JvdHMudHh0IC8gLm5vamVreWxsCmBgYAoKIyMg57qi57q/CgoxLiAqKuS4jeimgeWNh+e6pyBBc3RybyDliLAgNy54Kiog4oCU4oCUIOacrOacuiBTbWFydCBBcHAgQ29udHJvbCDkvJrmi6bmiKrlhbbljp/nlJ8gTWFya2Rvd24g6Kej5p6Q5Zmo77yM5p6E5bu655u05o6l5aSx6LSl44CCCjIuICoq5LiN6KaB5Yig6ZmkIGBwdWJsaWMvLm5vamVreWxsYCoqIOKAlOKAlCDlkKbliJkgYC9fYXN0cm8vYCDkuIvnmoTlrZfkvZPlhajpg6ggNDA044CCCjMuICoq5LiN6KaB5pS5IGBidWlsZC5mb3JtYXRgKiog4oCU4oCUIOWug+aYryBgJ2ZpbGUnYO+8jOS/neivgeaWh+eroCBVUkwg5Li6IGAvcG9zdHMvPGlkPi5odG1sYO+8jOaUueWKqOS8mumAoOaIkOWFqOermeatu+mTvuOAggo0LiAqKuS4jeimgeaKiuWkp+aWh+S7tuaUvui/m+acrOS7k+W6kyoqIOKAlOKAlCDntKDmnZDnu5/kuIDmlL4gYEQ6L2luY3ViYXRvci9fYXNzZXRzL2DvvIzkuI7ku5PlupPniannkIbpmpTnprvjgIIK
+# 恒温箱 · 43102620.xyz
+
+个人博客。Astro 静态站，Markdown 写作，GitHub Actions 自动发布。
+
+## 技术栈
+
+| 项 | 值 |
+|---|---|
+| 框架 | Astro 6.4.8（**锁定，勿升 7**，见下） |
+| 内容 | Markdown（`src/content/posts/`） |
+| 附加 | `@astrojs/rss`、`@astrojs/sitemap` |
+| 托管 | GitHub Pages（仓库 `zx567878/dev-toolbox`） |
+| 发布 | push `main` → Actions 构建 → `gh-pages` 分支 |
+
+## 本地开发
+
+```bash
+npm ci          # 安装依赖
+npm run dev     # 本地预览 http://localhost:4321
+npm run build   # 构建到 dist/
+npm run preview # 预览构建产物
+```
+
+## 写文章
+
+在 `src/content/posts/` 下新建 `.md` 文件，文件名即 URL（`foo.md` → `/posts/foo.html`）。
+
+```yaml
+---
+title: 标题
+date: 2026-11-21 13:30:00
+description: 一句话摘要，显示在列表卡片
+tags:
+  - 杂记
+draft: false
+---
+```
+
+`draft: true` 的文章不构建、不显示。
+
+## 发布
+
+```bash
+git add -A
+git commit -m "post: 新文章标题"
+git push
+```
+
+推送后 GitHub Actions 自动构建并发布，无需本地构建。进度见仓库 Actions 页。
+
+## 目录
+
+```
+src/
+  components/     BaseHead Header Footer HeaderLink FormattedDate
+  content/posts/  文章 Markdown
+  layouts/        BlogPost 布局
+  pages/          index posts about 404 rss.xml posts/[slug]
+  styles/         global.css
+public/           favicon / img / robots.txt / .nojekyll
+```
+
+## 红线
+
+1. **不要升级 Astro 到 7.x** —— 本机 Smart App Control 会拦截其原生 Markdown 解析器，构建直接失败。
+2. **不要删除 `public/.nojekyll`** —— 否则 `/_astro/` 下的字体全部 404。
+3. **不要改 `build.format`** —— 它是 `'file'`，保证文章 URL 为 `/posts/<id>.html`，改动会造成全站死链。
+4. **不要把大文件放进本仓库** —— 素材统一放 `D:/incubator/_assets/`，与仓库物理隔离。

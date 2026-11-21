@@ -1,1 +1,49 @@
-LS0tCi8vIOWFqOWxgOagt+W8j+WPquWcqOi/memHjOW8leWFpeS4gOasoe+8jOaJgOaciemhtemdoumAmui/hyBCYXNlSGVhZCDlhbHkuqsKaW1wb3J0ICcuLi9zdHlsZXMvZ2xvYmFsLmNzcyc7CmltcG9ydCB7IFNJVEVfVElUTEUsIFNJVEVfREVTQ1JJUFRJT04gfSBmcm9tICcuLi9jb25zdHMnOwoKaW50ZXJmYWNlIFByb3BzIHsKCXRpdGxlOiBzdHJpbmc7CglkZXNjcmlwdGlvbj86IHN0cmluZzsKCWltYWdlPzogc3RyaW5nOwp9CgovLyBBc3RybyA2IOi1t++8jGJ1aWxkLmZvcm1hdDonZmlsZScg5pe2IHBhdGhuYW1lIOS8muW4puS4iiBpbmRleC5odG1s77yMCi8vIOi/memHjOWOu+aOie+8jOmBv+WFjSBjYW5vbmljYWwg5oyH5ZCRIC9pbmRleC5odG1sIOmAoOaIkOmHjeWkjSBVUkwKY29uc3QgcGF0aG5hbWUgPSBBc3Ryby51cmwucGF0aG5hbWUucmVwbGFjZSgvaW5kZXhcLmh0bWwkLywgJycpOwpjb25zdCBjYW5vbmljYWxVUkwgPSBuZXcgVVJMKHBhdGhuYW1lLCBBc3Ryby5zaXRlKTsKY29uc3QgewoJdGl0bGUsCglkZXNjcmlwdGlvbiA9IFNJVEVfREVTQ1JJUFRJT04sCglpbWFnZSA9ICcvaW1nL2Jhbm5lci1kdXNrLmpwZycsCn0gPSBBc3Ryby5wcm9wczsKY29uc3Qgb2dJbWFnZSA9IG5ldyBVUkwoaW1hZ2UsIEFzdHJvLnNpdGUgPz8gQXN0cm8udXJsKTsKLS0tCgo8bWV0YSBjaGFyc2V0PSJ1dGYtOCIgLz4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCxpbml0aWFsLXNjYWxlPTEiIC8+CjxsaW5rIHJlbD0iaWNvbiIgdHlwZT0iaW1hZ2UvcG5nIiBzaXplcz0iMTI4eDEyOCIgaHJlZj0iL2ltZy9mYXZpY29uLnBuZyIgLz4KPGxpbmsgcmVsPSJzaG9ydGN1dCBpY29uIiBocmVmPSIvZmF2aWNvbi5pY28iIC8+CjxsaW5rIHJlbD0iYXBwbGUtdG91Y2gtaWNvbiIgc2l6ZXM9IjE4MHgxODAiIGhyZWY9Ii9pbWcvYXBwbGUtdG91Y2gtaWNvbi5wbmciIC8+CjxsaW5rIHJlbD0ic2l0ZW1hcCIgaHJlZj0iL3NpdGVtYXAtaW5kZXgueG1sIiAvPgo8bGluawoJcmVsPSJhbHRlcm5hdGUiCgl0eXBlPSJhcHBsaWNhdGlvbi9yc3MreG1sIgoJdGl0bGU9e1NJVEVfVElUTEV9CglocmVmPXtuZXcgVVJMKCdyc3MueG1sJywgQXN0cm8uc2l0ZSA/PyBBc3Ryby51cmwpfQovPgo8bWV0YSBuYW1lPSJnZW5lcmF0b3IiIGNvbnRlbnQ9e0FzdHJvLmdlbmVyYXRvcn0gLz4KCjxsaW5rIHJlbD0iY2Fub25pY2FsIiBocmVmPXtjYW5vbmljYWxVUkx9IC8+Cgo8dGl0bGU+e3RpdGxlfTwvdGl0bGU+CjxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PXtkZXNjcmlwdGlvbn0gLz4KCjxtZXRhIHByb3BlcnR5PSJvZzp0eXBlIiBjb250ZW50PSJ3ZWJzaXRlIiAvPgo8bWV0YSBwcm9wZXJ0eT0ib2c6dXJsIiBjb250ZW50PXtjYW5vbmljYWxVUkx9IC8+CjxtZXRhIHByb3BlcnR5PSJvZzp0aXRsZSIgY29udGVudD17dGl0bGV9IC8+CjxtZXRhIHByb3BlcnR5PSJvZzpkZXNjcmlwdGlvbiIgY29udGVudD17ZGVzY3JpcHRpb259IC8+CjxtZXRhIHByb3BlcnR5PSJvZzppbWFnZSIgY29udGVudD17b2dJbWFnZX0gLz4KCjxtZXRhIG5hbWU9InR3aXR0ZXI6Y2FyZCIgY29udGVudD0ic3VtbWFyeV9sYXJnZV9pbWFnZSIgLz4K
+---
+// 全局样式只在这里引入一次，所有页面通过 BaseHead 共享
+import '../styles/global.css';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+interface Props {
+	title: string;
+	description?: string;
+	image?: string;
+}
+
+// Astro 6 起，build.format:'file' 时 pathname 会带上 index.html，
+// 这里去掉，避免 canonical 指向 /index.html 造成重复 URL
+const pathname = Astro.url.pathname.replace(/index\.html$/, '');
+const canonicalURL = new URL(pathname, Astro.site);
+const {
+	title,
+	description = SITE_DESCRIPTION,
+	image = '/img/banner-dusk.jpg',
+} = Astro.props;
+const ogImage = new URL(image, Astro.site ?? Astro.url);
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/png" sizes="128x128" href="/img/favicon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title={SITE_TITLE}
+	href={new URL('rss.xml', Astro.site ?? Astro.url)}
+/>
+<meta name="generator" content={Astro.generator} />
+
+<link rel="canonical" href={canonicalURL} />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+
+<meta name="twitter:card" content="summary_large_image" />

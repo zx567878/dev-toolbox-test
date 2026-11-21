@@ -1,1 +1,31 @@
-LS0tCmNvbnN0IHllYXIgPSBuZXcgSW50bC5EYXRlVGltZUZvcm1hdCgnZW4tQ0EnLCB7Cgl0aW1lWm9uZTogJ0FzaWEvU2hhbmdoYWknLAoJeWVhcjogJ251bWVyaWMnLAp9KS5mb3JtYXQobmV3IERhdGUoKSk7Ci0tLQoKPGZvb3Rlcj4KCSZjb3B5OyB7eWVhcn0g5oGS5rip566xCgk8c3BhbiBjbGFzcz0ic2VwIj7Ctzwvc3Bhbj4KCTxhIGhyZWY9Ii9yc3MueG1sIj5SU1M8L2E+CjwvZm9vdGVyPgo8c3R5bGU+Cglmb290ZXIgewoJCXBhZGRpbmc6IDJlbSAxZW0gNmVtIDFlbTsKCQliYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQodmFyKC0tZ3JheS1ncmFkaWVudCkpIG5vLXJlcGVhdDsKCQljb2xvcjogcmdiKHZhcigtLWdyYXkpKTsKCQl0ZXh0LWFsaWduOiBjZW50ZXI7CgkJZm9udC1zaXplOiAwLjg1ZW07Cgl9Cglmb290ZXIgYSB7CgkJY29sb3I6IHJnYih2YXIoLS1ncmF5KSk7CgkJdGV4dC1kZWNvcmF0aW9uOiBub25lOwoJfQoJZm9vdGVyIGE6aG92ZXIgewoJCWNvbG9yOiByZ2IodmFyKC0tZ3JheS1kYXJrKSk7Cgl9Cgkuc2VwIHsKCQltYXJnaW46IDAgMC41ZW07Cgl9Cjwvc3R5bGU+Cg==
+---
+const year = new Intl.DateTimeFormat('en-CA', {
+	timeZone: 'Asia/Shanghai',
+	year: 'numeric',
+}).format(new Date());
+---
+
+<footer>
+	&copy; {year} 恒温箱
+	<span class="sep">·</span>
+	<a href="/rss.xml">RSS</a>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+		font-size: 0.85em;
+	}
+	footer a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	footer a:hover {
+		color: rgb(var(--gray-dark));
+	}
+	.sep {
+		margin: 0 0.5em;
+	}
+</style>

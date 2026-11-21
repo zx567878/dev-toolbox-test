@@ -1,1 +1,19 @@
-ewogICJuYW1lIjogImhlbmd3ZW54aWFuZyIsCiAgInZlcnNpb24iOiAiMS4wLjAiLAogICJzY3JpcHRzIjogewogICAgImRldiI6ICJhc3RybyBkZXYiLAogICAgImJ1aWxkIjogImFzdHJvIGJ1aWxkIiwKICAgICJwcmV2aWV3IjogImFzdHJvIHByZXZpZXciLAogICAgImNoZWNrIjogImFzdHJvIGNoZWNrIiwKICAgICJjbGVhbiI6ICJub2RlIC1lIFwiY29uc3R7cm1TeW5jfT1yZXF1aXJlKCdub2RlOmZzJyk7Zm9yKGNvbnN0IHAgb2YgWydkaXN0JywnLmFzdHJvJ10pcm1TeW5jKHAse3JlY3Vyc2l2ZTp0cnVlLGZvcmNlOnRydWV9KVwiIiwKICAgICJwcmVidWlsZCI6ICJub2RlIC1lIFwiY29uc3R7cm1TeW5jfT1yZXF1aXJlKCdub2RlOmZzJyk7Zm9yKGNvbnN0IHAgb2YgWydkaXN0JywnLmFzdHJvJywnbm9kZV9tb2R1bGVzLy5hc3RybyddKXJtU3luYyhwLHtyZWN1cnNpdmU6dHJ1ZSxmb3JjZTp0cnVlfSlcIiIKICB9LAogICJ0eXBlIjogIm1vZHVsZSIsCiAgInByaXZhdGUiOiB0cnVlLAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAiQGFzdHJvanMvcnNzIjogIl40LjAuMTkiLAogICAgIkBhc3Ryb2pzL3NpdGVtYXAiOiAiXjMuNy42IiwKICAgICJhc3RybyI6ICJeNi40LjgiCiAgfQp9Cg==
+{
+  "name": "hengwenxiang",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "clean": "node -e \"const{rmSync}=require('node:fs');for(const p of ['dist','.astro'])rmSync(p,{recursive:true,force:true})\"",
+    "prebuild": "node -e \"const{rmSync}=require('node:fs');for(const p of ['dist','.astro','node_modules/.astro'])rmSync(p,{recursive:true,force:true})\""
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.6",
+    "astro": "^6.4.8"
+  }
+}

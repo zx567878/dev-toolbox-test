@@ -1,1 +1,21 @@
-aW1wb3J0IHsgZ2V0Q29sbGVjdGlvbiB9IGZyb20gJ2FzdHJvOmNvbnRlbnQnOwppbXBvcnQgcnNzIGZyb20gJ0Bhc3Ryb2pzL3Jzcyc7CmltcG9ydCB7IFNJVEVfREVTQ1JJUFRJT04sIFNJVEVfVElUTEUgfSBmcm9tICcuLi9jb25zdHMnOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChjb250ZXh0KSB7Cgljb25zdCBwb3N0cyA9IChhd2FpdCBnZXRDb2xsZWN0aW9uKCdwb3N0cycpKQoJCS5maWx0ZXIoKHBvc3QpID0+ICFwb3N0LmRhdGEuZHJhZnQpCgkJLnNvcnQoKGEsIGIpID0+IGIuZGF0YS5kYXRlLnZhbHVlT2YoKSAtIGEuZGF0YS5kYXRlLnZhbHVlT2YoKSk7CgoJcmV0dXJuIHJzcyh7CgkJdGl0bGU6IFNJVEVfVElUTEUsCgkJZGVzY3JpcHRpb246IFNJVEVfREVTQ1JJUFRJT04sCgkJc2l0ZTogY29udGV4dC5zaXRlLAoJCWl0ZW1zOiBwb3N0cy5tYXAoKHBvc3QpID0+ICh7CgkJCXRpdGxlOiBwb3N0LmRhdGEudGl0bGUsCgkJCWRlc2NyaXB0aW9uOiBwb3N0LmRhdGEuZGVzY3JpcHRpb24gPz8gJycsCgkJCXB1YkRhdGU6IHBvc3QuZGF0YS5kYXRlLAoJCQlsaW5rOiBgL3Bvc3RzLyR7cG9zdC5pZH0uaHRtbGAsCgkJfSkpLAoJfSk7Cn0K
+import { getCollection } from 'astro:content';
+import rss from '@astrojs/rss';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+export async function GET(context) {
+	const posts = (await getCollection('posts'))
+		.filter((post) => !post.data.draft)
+		.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+	return rss({
+		title: SITE_TITLE,
+		description: SITE_DESCRIPTION,
+		site: context.site,
+		items: posts.map((post) => ({
+			title: post.data.title,
+			description: post.data.description ?? '',
+			pubDate: post.data.date,
+			link: `/posts/${post.id}.html`,
+		})),
+	});
+}

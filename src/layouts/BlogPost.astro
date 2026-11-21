@@ -1,1 +1,75 @@
-LS0tCmltcG9ydCBCYXNlSGVhZCBmcm9tICcuLi9jb21wb25lbnRzL0Jhc2VIZWFkLmFzdHJvJzsKaW1wb3J0IEZvb3RlciBmcm9tICcuLi9jb21wb25lbnRzL0Zvb3Rlci5hc3Rybyc7CmltcG9ydCBGb3JtYXR0ZWREYXRlIGZyb20gJy4uL2NvbXBvbmVudHMvRm9ybWF0dGVkRGF0ZS5hc3Rybyc7CmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcG9uZW50cy9IZWFkZXIuYXN0cm8nOwoKaW50ZXJmYWNlIFByb3BzIHsKCXRpdGxlOiBzdHJpbmc7CglkZXNjcmlwdGlvbj86IHN0cmluZzsKCWRhdGU6IERhdGU7Cgl1cGRhdGVkPzogRGF0ZTsKCWltYWdlPzogc3RyaW5nOwp9Cgpjb25zdCB7IHRpdGxlLCBkZXNjcmlwdGlvbiwgZGF0ZSwgdXBkYXRlZCwgaW1hZ2UgfSA9IEFzdHJvLnByb3BzOwotLS0KCjwhZG9jdHlwZSBodG1sPgo8aHRtbCBsYW5nPSJ6aC1DTiI+Cgk8aGVhZD4KCQk8QmFzZUhlYWQgdGl0bGU9e3RpdGxlfSBkZXNjcmlwdGlvbj17ZGVzY3JpcHRpb259IGltYWdlPXtpbWFnZX0gLz4KCQk8c3R5bGU+CgkJCW1haW4gewoJCQkJd2lkdGg6IGNhbGMoMTAwJSAtIDJlbSk7CgkJCQltYXgtd2lkdGg6IDEwMCU7CgkJCQltYXJnaW46IDA7CgkJCX0KCQkJLnByb3NlIHsKCQkJCXdpZHRoOiA3MjBweDsKCQkJCW1heC13aWR0aDogY2FsYygxMDAlIC0gMmVtKTsKCQkJCW1hcmdpbjogYXV0bzsKCQkJCXBhZGRpbmc6IDFlbTsKCQkJCWNvbG9yOiByZ2IodmFyKC0tZ3JheS1kYXJrKSk7CgkJCX0KCQkJLnRpdGxlIHsKCQkJCW1hcmdpbi1ib3R0b206IDFlbTsKCQkJCXBhZGRpbmc6IDFlbSAwOwoJCQkJdGV4dC1hbGlnbjogY2VudGVyOwoJCQkJbGluZS1oZWlnaHQ6IDEuMjsKCQkJfQoJCQkudGl0bGUgaDEgewoJCQkJbWFyZ2luOiAwIDAgMC41ZW0gMDsKCQkJfQoJCQkuZGF0ZSB7CgkJCQltYXJnaW4tYm90dG9tOiAwLjVlbTsKCQkJCWNvbG9yOiByZ2IodmFyKC0tZ3JheSkpOwoJCQl9CgkJCS5sYXN0LXVwZGF0ZWQtb24gewoJCQkJZm9udC1zdHlsZTogaXRhbGljOwoJCQl9CgkJPC9zdHlsZT4KCTwvaGVhZD4KCgk8Ym9keT4KCQk8SGVhZGVyIC8+CgkJPG1haW4+CgkJCTxhcnRpY2xlPgoJCQkJPGRpdiBjbGFzcz0icHJvc2UiPgoJCQkJCTxkaXYgY2xhc3M9InRpdGxlIj4KCQkJCQkJPGRpdiBjbGFzcz0iZGF0ZSI+CgkJCQkJCQk8Rm9ybWF0dGVkRGF0ZSBkYXRlPXtkYXRlfSAvPgoJCQkJCQkJe3VwZGF0ZWQgJiYgKAoJCQkJCQkJCTxkaXYgY2xhc3M9Imxhc3QtdXBkYXRlZC1vbiI+5pyA5ZCO5pu05pawIDxGb3JtYXR0ZWREYXRlIGRhdGU9e3VwZGF0ZWR9IC8+PC9kaXY+CgkJCQkJCQkpfQoJCQkJCQk8L2Rpdj4KCQkJCQkJPGgxPnt0aXRsZX08L2gxPgoJCQkJCQk8aHIgLz4KCQkJCQk8L2Rpdj4KCQkJCQk8c2xvdCAvPgoJCQkJPC9kaXY+CgkJCTwvYXJ0aWNsZT4KCQk8L21haW4+CgkJPEZvb3RlciAvPgoJPC9ib2R5Pgo8L2h0bWw+Cg==
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	date: Date;
+	updated?: Date;
+	image?: string;
+}
+
+const { title, description, date, updated, image } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={title} description={description} image={image} />
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.prose {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1.2;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={date} />
+							{updated && (
+								<div class="last-updated-on">最后更新 <FormattedDate date={updated} /></div>
+							)}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

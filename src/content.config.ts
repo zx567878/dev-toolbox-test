@@ -1,1 +1,46 @@
-aW1wb3J0IHsgZGVmaW5lQ29sbGVjdGlvbiwgeiB9IGZyb20gJ2FzdHJvOmNvbnRlbnQnOwppbXBvcnQgeyBnbG9iIH0gZnJvbSAnYXN0cm8vbG9hZGVycyc7CgovKioKICogZnJvbnQtbWF0dGVyIOeahOaXpeacn+S4gOW+i+aMiSAqKuWMl+S6rOaXtumXtO+8iFVUQys477yJ5aKZ5LiK5pe26Ze0Kiog6Kej5p6Q44CCCiAqCiAqIOS4jeiDveS+nei1luaehOW7uuacuuWZqOeahOacrOWcsOaXtuWMuu+8muacrOacuuaYryBVVEMrOO+8jEdpdEh1YiBBY3Rpb25zIOaYryBVVEPvvIwKICog5ZCM5LiA56+H5paH56ug5Zyo5Lik6L655Lya5beuIDgg5bCP5pe277yM6Leo6Zu254K55bCx55u05o6l6ZSZ5LiA5aSp44CCCiAqIOi/memHjOWbuuWumiArMDg6MDAg5YGP56e777yM5Lu75L2V5py65Zmo44CB5Lu75L2V5Zyw5Yy65p6E5bu65Ye655qE5pe26Ze05oiz5a6M5YWo5LiA6Ie044CCCiAqLwpjb25zdCBTSVRFX1VUQ19PRkZTRVQgPSAnKzA4OjAwJzsKCmZ1bmN0aW9uIHBhcnNlTG9jYWxEYXRlKHZhbHVlOiBzdHJpbmcgfCBEYXRlKTogRGF0ZSB7CiAgaWYgKHZhbHVlIGluc3RhbmNlb2YgRGF0ZSkgewogICAgLy8ganMteWFtbCDlt7Lmiorml6Dml7bljLrnmoTml7bpl7TmjIkgVVRDIOino+aekO+8jOWPluWbnuWQhOWtl+auteWQjumHjeaWsOaMiSArMDg6MDAg57uE6KOFCiAgICBjb25zdCBwID0gKG46IG51bWJlcikgPT4gU3RyaW5nKG4pLnBhZFN0YXJ0KDIsICcwJyk7CiAgICBjb25zdCBpc28gPQogICAgICBgJHt2YWx1ZS5nZXRVVENGdWxsWWVhcigpfS0ke3AodmFsdWUuZ2V0VVRDTW9udGgoKSArIDEpfS0ke3AodmFsdWUuZ2V0VVRDRGF0ZSgpKX1gICsKICAgICAgYFQke3AodmFsdWUuZ2V0VVRDSG91cnMoKSl9OiR7cCh2YWx1ZS5nZXRVVENNaW51dGVzKCkpfToke3AodmFsdWUuZ2V0VVRDU2Vjb25kcygpKX1gOwogICAgcmV0dXJuIG5ldyBEYXRlKGlzbyArIFNJVEVfVVRDX09GRlNFVCk7CiAgfQogIGNvbnN0IHMgPSBTdHJpbmcodmFsdWUpLnRyaW0oKS5yZXBsYWNlKCcgJywgJ1QnKTsKICBpZiAoL15cZHs0fS1cZHsyfS1cZHsyfSQvLnRlc3QocykpIHJldHVybiBuZXcgRGF0ZShgJHtzfVQwMDowMDowMCR7U0lURV9VVENfT0ZGU0VUfWApOwogIGlmICgvXlxkezR9LVxkezJ9LVxkezJ9VFxkezJ9OlxkezJ9KDpcZHsyfSk/JC8udGVzdChzKSkgewogICAgY29uc3Qgd2l0aFNlY29uZHMgPSAvVFxkezJ9OlxkezJ9OlxkezJ9JC8udGVzdChzKSA/IHMgOiBgJHtzfTowMGA7CiAgICByZXR1cm4gbmV3IERhdGUod2l0aFNlY29uZHMgKyBTSVRFX1VUQ19PRkZTRVQpOwogIH0KICByZXR1cm4gbmV3IERhdGUocyk7Cn0KCmNvbnN0IGRhdGVGaWVsZCA9IHoudW5pb24oW3ouc3RyaW5nKCksIHouZGF0ZSgpXSkudHJhbnNmb3JtKHBhcnNlTG9jYWxEYXRlKTsKCmNvbnN0IHBvc3RzID0gZGVmaW5lQ29sbGVjdGlvbih7CiAgbG9hZGVyOiBnbG9iKHsgcGF0dGVybjogJyoqLyoubWQnLCBiYXNlOiAnLi9zcmMvY29udGVudC9wb3N0cycgfSksCiAgc2NoZW1hOiB6Lm9iamVjdCh7CiAgICB0aXRsZTogei5zdHJpbmcoKSwKICAgIGRhdGU6IGRhdGVGaWVsZCwKICAgIHVwZGF0ZWQ6IGRhdGVGaWVsZC5vcHRpb25hbCgpLAogICAgZGVzY3JpcHRpb246IHouc3RyaW5nKCkub3B0aW9uYWwoKSwKICAgIHRhZ3M6IHouYXJyYXkoei5zdHJpbmcoKSkuZGVmYXVsdChbXSksCiAgICBjYXRlZ29yaWVzOiB6LmFycmF5KHouc3RyaW5nKCkpLmRlZmF1bHQoW10pLAogICAgZHJhZnQ6IHouYm9vbGVhbigpLmRlZmF1bHQoZmFsc2UpLAogIH0pLAp9KTsKCmV4cG9ydCBjb25zdCBjb2xsZWN0aW9ucyA9IHsgcG9zdHMgfTsK
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+
+/**
+ * front-matter 的日期一律按 **北京时间（UTC+8）墙上时间** 解析。
+ *
+ * 不能依赖构建机器的本地时区：本机是 UTC+8，GitHub Actions 是 UTC，
+ * 同一篇文章在两边会差 8 小时，跨零点就直接错一天。
+ * 这里固定 +08:00 偏移，任何机器、任何地区构建出的时间戳完全一致。
+ */
+const SITE_UTC_OFFSET = '+08:00';
+
+function parseLocalDate(value: string | Date): Date {
+  if (value instanceof Date) {
+    // js-yaml 已把无时区的时间按 UTC 解析，取回各字段后重新按 +08:00 组装
+    const p = (n: number) => String(n).padStart(2, '0');
+    const iso =
+      `${value.getUTCFullYear()}-${p(value.getUTCMonth() + 1)}-${p(value.getUTCDate())}` +
+      `T${p(value.getUTCHours())}:${p(value.getUTCMinutes())}:${p(value.getUTCSeconds())}`;
+    return new Date(iso + SITE_UTC_OFFSET);
+  }
+  const s = String(value).trim().replace(' ', 'T');
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(`${s}T00:00:00${SITE_UTC_OFFSET}`);
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/.test(s)) {
+    const withSeconds = /T\d{2}:\d{2}:\d{2}$/.test(s) ? s : `${s}:00`;
+    return new Date(withSeconds + SITE_UTC_OFFSET);
+  }
+  return new Date(s);
+}
+
+const dateField = z.union([z.string(), z.date()]).transform(parseLocalDate);
+
+const posts = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
+  schema: z.object({
+    title: z.string(),
+    date: dateField,
+    updated: dateField.optional(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    categories: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { posts };

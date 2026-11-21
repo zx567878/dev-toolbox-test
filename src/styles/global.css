@@ -1,1 +1,150 @@
-LyoKICBCYXNlZCBvbiBCZWFyIEJsb2cgZGVmYXVsdCBDU1MgKE1JVCksIHZpYSB0aGUgb2ZmaWNpYWwgQXN0cm8gYmxvZyB0ZW1wbGF0ZS4KICBodHRwczovL2dpdGh1Yi5jb20vSGVybWFuTWFydGludXMvYmVhcmJsb2cvYmxvYi8yOTcwMjZhODc3YmMyYWIyYjNiZGZiZDZiOWY3OTYxYzM1MDkxN2RkL3RlbXBsYXRlcy9zdHlsZXMvYmxvZy9kZWZhdWx0LmNzcwoqLwoKQGZvbnQtZmFjZSB7Cglmb250LWZhbWlseTogJ0F0a2luc29uJzsKCXNyYzogdXJsKCcuLi9hc3NldHMvZm9udHMvYXRraW5zb24tcmVndWxhci53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7Cglmb250LXdlaWdodDogNDAwOwoJZm9udC1zdHlsZTogbm9ybWFsOwoJZm9udC1kaXNwbGF5OiBzd2FwOwp9CkBmb250LWZhY2UgewoJZm9udC1mYW1pbHk6ICdBdGtpbnNvbic7CglzcmM6IHVybCgnLi4vYXNzZXRzL2ZvbnRzL2F0a2luc29uLWJvbGQud29mZicpIGZvcm1hdCgnd29mZicpOwoJZm9udC13ZWlnaHQ6IDcwMDsKCWZvbnQtc3R5bGU6IG5vcm1hbDsKCWZvbnQtZGlzcGxheTogc3dhcDsKfQoKOnJvb3QgewoJLS1hY2NlbnQ6ICMyMzM3ZmY7CgktLWFjY2VudC1kYXJrOiAjMDAwZDhhOwoJLS1ibGFjazogMTUsIDE4LCAyNTsKCS0tZ3JheTogOTYsIDExNSwgMTU5OwoJLS1ncmF5LWxpZ2h0OiAyMjksIDIzMywgMjQwOwoJLS1ncmF5LWRhcms6IDM0LCA0MSwgNTc7CgktLWdyYXktZ3JhZGllbnQ6IHJnYmEodmFyKC0tZ3JheS1saWdodCksIDUwJSksICNmZmY7CgktLWJveC1zaGFkb3c6CgkJMCAycHggNnB4IHJnYmEodmFyKC0tZ3JheSksIDI1JSksIDAgOHB4IDI0cHggcmdiYSh2YXIoLS1ncmF5KSwgMzMlKSwKCQkwIDE2cHggMzJweCByZ2JhKHZhcigtLWdyYXkpLCAzMyUpOwp9CmJvZHkgewoJZm9udC1mYW1pbHk6ICdBdGtpbnNvbicsICdQaW5nRmFuZyBTQycsICdNaWNyb3NvZnQgWWFIZWknLCBzYW5zLXNlcmlmOwoJbWFyZ2luOiAwOwoJcGFkZGluZzogMDsKCXRleHQtYWxpZ246IGxlZnQ7CgliYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQodmFyKC0tZ3JheS1ncmFkaWVudCkpIG5vLXJlcGVhdDsKCWJhY2tncm91bmQtc2l6ZTogMTAwJSA2MDBweDsKCXdvcmQtd3JhcDogYnJlYWstd29yZDsKCW92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7Cgljb2xvcjogcmdiKHZhcigtLWdyYXktZGFyaykpOwoJZm9udC1zaXplOiAyMHB4OwoJbGluZS1oZWlnaHQ6IDEuNzsKfQptYWluIHsKCXdpZHRoOiA3MjBweDsKCW1heC13aWR0aDogY2FsYygxMDAlIC0gMmVtKTsKCW1hcmdpbjogYXV0bzsKCXBhZGRpbmc6IDNlbSAxZW07Cn0KaDEsCmgyLApoMywKaDQsCmg1LApoNiB7CgltYXJnaW46IDAgMCAwLjVyZW0gMDsKCWNvbG9yOiByZ2IodmFyKC0tYmxhY2spKTsKCWxpbmUtaGVpZ2h0OiAxLjI7Cn0KaDEgewoJZm9udC1zaXplOiAzLjA1MmVtOwp9CmgyIHsKCWZvbnQtc2l6ZTogMi40NDFlbTsKfQpoMyB7Cglmb250LXNpemU6IDEuOTUzZW07Cn0KaDQgewoJZm9udC1zaXplOiAxLjU2M2VtOwp9Cmg1IHsKCWZvbnQtc2l6ZTogMS4yNWVtOwp9CnN0cm9uZywKYiB7Cglmb250LXdlaWdodDogNzAwOwp9CmEgewoJY29sb3I6IHZhcigtLWFjY2VudCk7Cn0KYTpob3ZlciB7Cgljb2xvcjogdmFyKC0tYWNjZW50KTsKfQpwIHsKCW1hcmdpbi1ib3R0b206IDFlbTsKfQoucHJvc2UgcCB7CgltYXJnaW4tYm90dG9tOiAyZW07Cn0KdGV4dGFyZWEgewoJd2lkdGg6IDEwMCU7Cglmb250LXNpemU6IDE2cHg7Cn0KaW5wdXQgewoJZm9udC1zaXplOiAxNnB4Owp9CnRhYmxlIHsKCXdpZHRoOiAxMDAlOwp9CmltZyB7CgltYXgtd2lkdGg6IDEwMCU7CgloZWlnaHQ6IGF1dG87Cglib3JkZXItcmFkaXVzOiA4cHg7Cn0KY29kZSB7CglwYWRkaW5nOiAycHggNXB4OwoJYmFja2dyb3VuZC1jb2xvcjogcmdiKHZhcigtLWdyYXktbGlnaHQpKTsKCWJvcmRlci1yYWRpdXM6IDJweDsKfQpwcmUgewoJcGFkZGluZzogMS41ZW07Cglib3JkZXItcmFkaXVzOiA4cHg7Cn0KcHJlID4gY29kZSB7CglhbGw6IHVuc2V0Owp9CmJsb2NrcXVvdGUgewoJYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCB2YXIoLS1hY2NlbnQpOwoJcGFkZGluZzogMCAwIDAgMjBweDsKCW1hcmdpbjogMDsKCWZvbnQtc2l6ZTogMS4zMzNlbTsKfQpociB7Cglib3JkZXI6IG5vbmU7Cglib3JkZXItdG9wOiAxcHggc29saWQgcmdiKHZhcigtLWdyYXktbGlnaHQpKTsKfQpAbWVkaWEgKG1heC13aWR0aDogNzIwcHgpIHsKCWJvZHkgewoJCWZvbnQtc2l6ZTogMThweDsKCX0KCW1haW4gewoJCXBhZGRpbmc6IDFlbTsKCX0KfQoKLnNyLW9ubHkgewoJYm9yZGVyOiAwOwoJcGFkZGluZzogMDsKCW1hcmdpbjogMDsKCXBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1wb3J0YW50OwoJaGVpZ2h0OiAxcHg7Cgl3aWR0aDogMXB4OwoJb3ZlcmZsb3c6IGhpZGRlbjsKCWNsaXA6IHJlY3QoMXB4LCAxcHgsIDFweCwgMXB4KTsKCWNsaXAtcGF0aDogaW5zZXQoNTAlKTsKCXdoaXRlLXNwYWNlOiBub3dyYXA7Cn0K
+/*
+  Based on Bear Blog default CSS (MIT), via the official Astro blog template.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+*/
+
+@font-face {
+	font-family: 'Atkinson';
+	src: url('../assets/fonts/atkinson-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Atkinson';
+	src: url('../assets/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--accent: #2337ff;
+	--accent-dark: #000d8a;
+	--black: 15, 18, 25;
+	--gray: 96, 115, 159;
+	--gray-light: 229, 233, 240;
+	--gray-dark: 34, 41, 57;
+	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--box-shadow:
+		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 16px 32px rgba(var(--gray), 33%);
+}
+body {
+	font-family: 'Atkinson', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background-size: 100% 600px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: rgb(var(--gray-dark));
+	font-size: 20px;
+	line-height: 1.7;
+}
+main {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--black));
+	line-height: 1.2;
+}
+h1 {
+	font-size: 3.052em;
+}
+h2 {
+	font-size: 2.441em;
+}
+h3 {
+	font-size: 1.953em;
+}
+h4 {
+	font-size: 1.563em;
+}
+h5 {
+	font-size: 1.25em;
+}
+strong,
+b {
+	font-weight: 700;
+}
+a {
+	color: var(--accent);
+}
+a:hover {
+	color: var(--accent);
+}
+p {
+	margin-bottom: 1em;
+}
+.prose p {
+	margin-bottom: 2em;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+table {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+code {
+	padding: 2px 5px;
+	background-color: rgb(var(--gray-light));
+	border-radius: 2px;
+}
+pre {
+	padding: 1.5em;
+	border-radius: 8px;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding: 0 0 0 20px;
+	margin: 0;
+	font-size: 1.333em;
+}
+hr {
+	border: none;
+	border-top: 1px solid rgb(var(--gray-light));
+}
+@media (max-width: 720px) {
+	body {
+		font-size: 18px;
+	}
+	main {
+		padding: 1em;
+	}
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

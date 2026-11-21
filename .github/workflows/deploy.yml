@@ -1,1 +1,39 @@
-bmFtZTogRGVwbG95CgpvbjoKICBwdXNoOgogICAgYnJhbmNoZXM6IFttYWluXQogIHdvcmtmbG93X2Rpc3BhdGNoOgoKcGVybWlzc2lvbnM6CiAgY29udGVudHM6IHdyaXRlCgpjb25jdXJyZW5jeToKICBncm91cDogcGFnZXMKICBjYW5jZWwtaW4tcHJvZ3Jlc3M6IHRydWUKCmpvYnM6CiAgYnVpbGQtZGVwbG95OgogICAgcnVucy1vbjogdWJ1bnR1LWxhdGVzdAogICAgc3RlcHM6CiAgICAgIC0gdXNlczogYWN0aW9ucy9jaGVja291dEB2NAoKICAgICAgLSB1c2VzOiBhY3Rpb25zL3NldHVwLW5vZGVAdjQKICAgICAgICB3aXRoOgogICAgICAgICAgbm9kZS12ZXJzaW9uOiAyMgogICAgICAgICAgY2FjaGU6IG5wbQoKICAgICAgLSBuYW1lOiBJbnN0YWxsCiAgICAgICAgcnVuOiBucG0gY2kKCiAgICAgIC0gbmFtZTogQnVpbGQKICAgICAgICBydW46IG5wbSBydW4gYnVpbGQKCiAgICAgIC0gbmFtZTogUHVibGlzaCB0byBnaC1wYWdlcwogICAgICAgIHVzZXM6IHBlYWNlaXJpcy9hY3Rpb25zLWdoLXBhZ2VzQHY0CiAgICAgICAgd2l0aDoKICAgICAgICAgIGdpdGh1Yl90b2tlbjogJHt7IHNlY3JldHMuR0lUSFVCX1RPS0VOIH19CiAgICAgICAgICBwdWJsaXNoX2RpcjogLi9kaXN0CiAgICAgICAgICBwdWJsaXNoX2JyYW5jaDogZ2gtcGFnZXMKICAgICAgICAgIGNuYW1lOiB0ZXN0LjQzMTAyNjIwLnh5egogICAgICAgICAgY29tbWl0X21lc3NhZ2U6ICJkZXBsb3k6ICR7eyBnaXRodWIuZXZlbnQuaGVhZF9jb21taXQubWVzc2FnZSB9fSIK
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          cname: test.43102620.xyz
+          commit_message: "deploy: ${{ github.event.head_commit.message }}"
